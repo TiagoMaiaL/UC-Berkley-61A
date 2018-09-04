@@ -1,0 +1,95 @@
+
+Chapter 2 - Exercises
+
+2.1:
+ - function: word
+ - arg 1: now
+ - arg 2: here
+ - result: nowhere
+
+ - function: sentence
+ - arg 1: now
+ - arg 2: here
+ - result: (now here)
+
+ - function: first
+ - arg 1: blackbird
+ - result: b
+
+ - function: first
+ - arg 1: (blackbird)
+ - result: blackbird
+
+ - function: +
+ - arg 1: 3
+ - arg 2: 4
+ - result: 7
+
+ - function: every
+ - arg 1: butfirst
+ - arg 2: (thank you girl)
+ - result: (hank ou irl)
+
+ - function: member?
+ - arg 1: e
+ - arg 2: aardvark
+ - result: #F
+
+ - function: member?
+ - arg 1: the
+ - arg 2: (the dog)
+ - result: #t
+
+ - function: keep
+ - arg 1: vowel?
+ - arg 2: (i will)
+ - result: (i)
+
+ - function: keep
+ - arg 1: vowel?
+ - arg 2: eieio (I don't know what astronomy word would lead to this result)
+ - result: eieio
+
+ - function: every
+ - arg 1: last
+ - arg 2: (honey pie)
+ - result: (y e)
+
+ - function: keep
+ - arg 1: vowel?
+ - arg 2: taxman
+ - result: aa
+
+2.2:
+ The domain of the "vowel?" function is composed of every kind of type 
+ presented in the book so far. Its domain is always a boolean type
+ indicating if the argument is a vowel or not.
+
+2.3:
+ The domain of the "appearances" function might be a char, word or a
+ positive number. The range is composed of numbers (from 0 to n). The
+ function's purpose is to find occurrences of the first argument into
+ the second one, so if the letter c is passed to be found in the word
+ coala, the result will be 1, because there's only one occurrence.
+
+2.4:
+ The "item" function is used to get a value at the specified index.
+ It takes two arguments: the first is a positive number (the index), 
+ and the second might be a word, sentence, or number,
+ which is interpreted as a sequence. The range is the value at
+ specified index.
+
+2.5:
+ even?, number?, odd?, vowel?
+
+2.6:
+ count, butlast, butfirst, last, first, word
+
+2.7:
+ +, -, /, <=, <, =, >=, >, and, or, not, max
+
+2.8:
+ +, =, and, or, max
+
+2.9:
+ +, =, max, or, and
