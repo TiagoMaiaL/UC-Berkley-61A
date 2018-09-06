@@ -1,0 +1,11 @@
+
+ Real Exercises:
+
+- 3.9:
+ The result of the expression (+ 8 2) is 10.
+ - As an atom: 10
+ - Another compound expression made up of three atoms: (+ 1 9)
+ - A compound expression made up of four atoms: (+ 2 2 6)
+ - A compound expression made up of an atom and two compound subexpressions:
+   (+ (* 2 3) (* 2 2))
+ - Any other kind of expression: (sqrt 100)
