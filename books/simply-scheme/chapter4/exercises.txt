@@ -1,0 +1,94 @@
+
+4.4
+ (define (sphere-volume r)
+     (* (/ 4 3) 3.141592654)
+     (* r r r))
+ 
+ In the previous definition, the body is wrong, because it doesn't
+ return any value, since there isn't any procedure being applied
+ to the compound expressions. The correct definition would be:
+ 
+ (define (sphere-volume r)
+     (* (/ 4 3) 3.141592654 (* r r r)))
+
+ -------------------------------
+
+ (define (next x)
+     (x + 1))
+
+ In the previous definition, the body is wrong, x isn't a procedure.
+ The correct approach would be:
+
+ (define (next x)
+     (+ x 1))
+
+ -------------------------------- 
+
+ (define (square)
+     (* x x))
+
+ In the previous definition, the body is correct, but a formal parameter
+ x is missing. The correct code would be:
+ 
+ (define (square x)
+     (* x x))
+
+ ---------------------------------
+
+ (define (triangle-area triangle)
+     (* 0.5 base height))
+
+ In the previous code, the body is ok, but the formal parameters base and height
+ are missing. The correct definition would be:
+ 
+ (define (triangle-area base height)
+     (* 0.5 base height))
+
+ ---------------------------------
+
+ (define (sum-of-squares (square x) (square y))
+     (+ (square x) (square y))
+
+ In the previous definition, the formal parameters aren't correctly declared.
+ The square procedure is only applied in the body:
+ 
+ (define (sum-of-squares x y)
+     (+ (square x) (square y)))
+
+ ---------------------------------
+
+ 4.5
+
+ (define (celsius-fahrenheit c)
+     (+ (* (/ 9 5) c) 32))
+
+ (define (fahrenheit-celsius f)   
+     (* (/ 5 9) (- f 32)))
+
+ 4.6
+
+ (define (fourth x)
+     (* x x x x))
+
+ (define (fourth x)
+     (square (square x)))
+
+ 4.7
+
+ (define (abs x)
+    (sqrt (square x)))
+
+ 4.8
+
+ (define (scientific x power)
+    (* x (expt 10 power)))
+
+ 4.9
+
+ (define (discount total percentage)     
+         (- total (* total (/ percentage 100))))
+
+ 4.10
+
+ (define (tip total)
+         (- (ceiling (+ (* 0.15 total) total)) total))
