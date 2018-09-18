@@ -1,0 +1,49 @@
+
+ 5.13:
+ 
+ In my version of scheme, "banana (with only one quotation mark) is not
+ recognized as a string. But "banana" represents one.
+ (first "banana") is a word with a single char, because we are using
+ the "first" procedure, which is a selector as well. 
+
+ 5.14:
+ 
+ (define (third word)
+     	 (item 3 word))
+
+ 5.15:
+ 
+ (define (first-two text)
+ 	 (word (first text) (first (butfirst text))))
+
+ 5.16:
+
+ (define (two-first first-word second-word)
+ 	 (word (first first-word) (first second-word)))
+
+ (define (two-first-sent sentence)
+ 	 (word (first (first sentence)) (first (item 2 sentence))))
+
+ 5.17:
+
+ (define (knight name)
+ 	 (se 'Sir name))
+
+ 5.18:
+
+ Gets the first and last (the ends) letters of the provided word.
+
+ 5.19:
+
+ (define (insert-and sentence-text)
+ 	 (se (se (bl sentence-text) 'and) (last sentence-text)))
+
+ 5.20:
+
+ (define (middle-names full-name)
+ 	 (bf (bl full-name)))
+
+ 5.21:
+
+ (define (query statement)
+ 	 (se (item 2 statement) (first statement) (bl (bf (bf statement))) (word (last statement) '?)))
